@@ -26,6 +26,6 @@ This project provides an automated solution to deploy a WordPress site on Oracle
    ```
 5. Access your WordPress site at:
    ```
-   http://<instance_public_ip>:8080
+   http://<instance_public_ip>
    ```
 

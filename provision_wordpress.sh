@@ -32,14 +32,14 @@ services:
   wordpress:
     image: wordpress:latest
     ports:
-      - 8080:80
+      - 80:80
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: exampleuser
       WORDPRESS_DB_PASSWORD: examplepass
       WORDPRESS_DB_NAME: exampledb
-      WORDPRESS_SITE_URL: http://$INSTANCE_PUBLIC_IP:8080
-      WORDPRESS_HOME: http://$INSTANCE_PUBLIC_IP:8080
+      WORDPRESS_SITE_URL: http://$INSTANCE_PUBLIC_IP
+      WORDPRESS_HOME: http://$INSTANCE_PUBLIC_IP
   db:
     image: mysql:5.7
     environment:
